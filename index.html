@@ -5,36 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DOO LIST</title>
     <link rel="stylesheet" href="src/output.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
 <body class="m-0 p-0 box-border h-screen bg-slate-50 font-primary">
-    <div class="px-24">
-        <div class="pt-20">
-            <div class="">
-                <h1 class="flex justify-center text-7xl font-bold">Organisez enfin votre</h1>
-                <h2 class="flex justify-center text-6xl font-bold">vie et votre travail.</h2>
-                <h3 class="flex justify-center text-6xl">MauriceTasks</h3>
-
-
-                <h2 class="flex justify-center pt-14 text-slate-400 text-xl font-bold">Simplifiez votre vie et celle de votre équipe. L'application de</h2>
-                <h2 class="flex justify-center text-slate-400 text-xl font-bold">gestion des tâches et de liste de tâches la plus utilisée au monde.</h2>
-
-                <div class="flex justify-center pt-14">
-                    <button class="border p-2 rounded-xl" >
-                        <a href="#">
-                            commencer
-                        </a>
-                    </button>
-                </div>
+    <div class="px-14 py-4 text-xl">
+        <div class="flex items-center">
+            <div class="flex items-center">
+                <img class="" src="img/icons8-todoist-50.png" alt="">
+                <h1>MauraTasks</h1>
             </div>
+    
+            <ul class="flex justify-end w-full">
+                <li class="m-2">A propos</li>
+                <li class="m-2">Fonctionnalite</li>
+                <li class="m-2">freback</li>
+            </ul>
+        </div>
+    </div>
+    <div class="pt-14">
+        <div class="">
+            <h1 class="flex justify-center text-7xl font-bold debut">Organisez enfin votre</h1>
+            <h2 class="flex justify-center text-6xl font-bold debut">vie et votre travail.</h2>
+            <h3 class="flex justify-center text-6xl debut">MauriceTasks</h3>
 
-            <!-- <div class="w-1/2 ml-4">
-                <img src="do to list.jpg" alt="">
-            </div> -->
 
+            <div class="simple">
+                <h2 class="flex justify-center pt-14 text-slate-400 text-xl font-bold">Simplifiez votre vie et celle de votre équipe. L'application de</h2>
+                <h2 class="flex justify-center text-slate-400 text-xl font-bold ">gestion des tâches et de liste de tâches la plus utilisée au monde.</h2>
+
+            </div>
+            <div class="flex justify-center pt-14 btn">
+                <button class="border p-5 rounded-xl animate-bounce w-6 h-6 " >
+                    <a href="#">
+                        Commencer
+                    </a>
+                </button>
+            </div>
         </div>
 
     </div>
-  
+
+    <script src="script.js"></script>
+    <!-- scrollreceal -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 </body>
 </html>
