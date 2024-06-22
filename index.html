@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DOO LIST</title>
+    <title>Acceuil</title>
     <link rel="stylesheet" href="src/output.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
 <body class="m-0 p-0 box-border h-screen bg-slate-50 font-primary">
-    <div class="px-14 py-4 text-xl">
-        <div class="flex items-center">
-            <div class="flex items-center">
+    <div class="px-14 py-4 text-xl ">
+        <div class="flex items-center ">
+            <div class="flex items-center text-blue-500 font-bold">
                 <img class="" src="img/icons8-todoist-50.png" alt="">
                 <h1>MauraTasks</h1>
             </div>
     
-            <ul class="flex justify-end w-full">
+            <ul class="flex justify-end w-full items-center">
+                <li class="m-2">Acceuil</li>
                 <li class="m-2">A propos</li>
-                <li class="m-2">Fonctionnalite</li>
-                <li class="m-2">freback</li>
+                <li class="m-2 p-2 rounded-xl bg-blue-500 text-slate-50">freback</li>
             </ul>
         </div>
     </div>
-    <div class="pt-14">
+    <div class="pt-12">
         <div class="">
             <h1 class="flex justify-center text-7xl font-bold debut">Organisez enfin votre</h1>
             <h2 class="flex justify-center text-6xl font-bold debut">vie et votre travail.</h2>
@@ -35,16 +35,21 @@
                 <h2 class="flex justify-center text-slate-400 text-xl font-bold ">gestion des tâches et de liste de tâches la plus utilisée au monde.</h2>
 
             </div> 
-            <div class="flex justify-center pt-14 btn">
-                <button class="border p-5 rounded-xl animate-bounce  " >
-                    <a href="#">
-                        Commencer
-                    </a>
-                </button>
+            <div class="flex justify-center pt-12 btn">
+
+                <a href="todolist.html" class="border p-4 rounded-xl bg-blue-500 text-slate-50 text-xl animate-bounce">
+                    <button>commencer
+                        <ion-icon name="arrow-down-outline"></ion-icon>
+                    </button>
+                </a>
+
             </div>
         </div>
 
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="script.js"></script>
 </body>

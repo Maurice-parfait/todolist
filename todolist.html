@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="m-0 p-0 box-border  h-screen bg-slate-50 font-primary">
+
+    <div class="px-14 py-4 text-xl">
+        <div class="flex items-center ">
+            <div class="flex items-center text-blue-500 font-bold">
+                <img class="" src="img/icons8-todoist-50.png" alt="">
+                <h1>MauraTasks</h1>
+            </div>
+    
+            <ul class="flex justify-end w-full items-center">
+                <li class="m-2"><a href="index.html">
+                    Acceuil
+                </a></li>
+                <li class="m-2">A propos</li>
+                <li class="m-2 p-2 rounded-xl bg-blue-500 text-slate-50">freback</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="flex px-14 items-center">
+        <div class="w-1/3 mr-4">
+            <img class="rounded-xl h-96" src="img/Best-To-Do-List-Apps-For-Better-Task-Management.webp" alt="">
+        </div>
+
+        <div class="w-3/5">
+            <h1 class="flex justify-center text-2xl font-bold">MA TO DO LIST: MauriceTasks</h1>
+
+            <div class="flex w-full">
+                <div class="ml-8 mt-14 w-1/2">
+                    <label for="">Ajouter une tache :</label> <br>
+                    <textarea class="p-4 border rounded-xl" id="ajout_tache" name="" cols="30" rows="10"></textarea> <br>
+
+                    <button type="button" class="border p-4 mt-2 rounded-xl flex justify-center">AJOUTER</button>
+                </div>
+
+                <div class="w-1/2 mt-14">
+                    <ul id="tache" class="w-full">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
