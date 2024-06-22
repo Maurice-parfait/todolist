@@ -6,6 +6,7 @@ module.exports = {
       fontFamily : {
         primary :  "Roboto"
       }
+      
     },
   },
   plugins: [],
