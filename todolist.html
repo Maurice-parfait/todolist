@@ -34,21 +34,22 @@
         <div class="w-3/5">
             <h1 class="flex justify-center text-2xl font-bold">MA TO DO LIST: MauriceTasks</h1>
 
-            <div class="flex border">
+            <div class="flex">
                 <div class="ml-8 mt-14 w-1/2">
                     <label for="">Ajouter une tache :</label> <br>
-                    <textarea class="p-4 border rounded-xl" id="ajout_tache" name="" cols="30" rows="10"></textarea> <br>
+                    <textarea class="p-4 border rounded-xl focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" id="ajout_tache" name="" cols="30" rows="5"></textarea> <br>
 
                     <div class="mt-6">
-                        <button id="btnajt" class="border p-4 rounded-xl flex justify-center  bg-blue-500 text-slate-50 text-xl animate-bounce">AJOUTER</button>
+                        <button id="btnajt" class="p-4 rounded-xl flex justify-center  bg-blue-500 text-slate-50 text-xl animate-bounce">AJOUTER</button>
                     </div>
                 </div>
 
-                <div class="w-1/2 mt-14 border ">
+                <div class="w-1/2 mt-14">
                     
-                    <ul id="tache" class=" text-red-500 list-disc">
+                    <ul id="tache" class="list-decimal">
+
                         <h1 class="flex justify-center font-bold text-2xl mb-4">LES TACHES : </h1>
-                        <li class="text-red-500"></li>
+                        
                     </ul>
                 </div>
             </div>
