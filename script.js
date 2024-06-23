@@ -1,3 +1,15 @@
+gsap.to("#circle", { 
+    duration: 1.5, 
+    rotation: 360, 
+    repeat: -1, 
+    ease: "linear" 
+});
+
+const loader = document.getElementById("loader");
+window.addEventListener("load", ()=> {
+    loader.style.display = "none";
+});
+
 ScrollReveal().reveal('.debut', {
     delay: 1000,
     duration: 600,
