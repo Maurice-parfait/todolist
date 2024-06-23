@@ -6,33 +6,46 @@
     <title>Acceuil</title>
     <link rel="stylesheet" href="src/output.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="icomoon/style.css">
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
-<body class="m-0 p-0 box-border h-screen bg-slate-50 font-primary">
-    <div class="px-14 py-4 text-xl ">
+<body class="m-0 p-0 box-border h-screen bg-slate-50 font-primary max-md:h-auto">
+    <div class="px-14 py-4 text-xl max-md:bg-red-500 max-md:px-4 max-md:py-2 max-sm:bg-blue-500 max-sm:px-8">
         <div class="flex items-center ">
             <div class="flex items-center text-blue-500 font-bold">
                 <img class="" src="img/icons8-todoist-50.png" alt="">
                 <h1>MauraTasks</h1>
             </div>
     
-            <ul class="flex justify-end w-full items-center">
+            <ul class="flex justify-end w-full items-center 
+                max-sm:flex-col max-sm:justify-center max-sm:z-[99] max-sm:border max-sm:h-screen
+                max-sm:text-5xl max-sm:flex-wrap max-sm:bg-red-600 max-sm:absolute max-sm:top-16 max-sm:left-0 
+                max-sm:hidden" id="menu">
                 <li class="m-2">Acceuil</li>
-                <li class="m-2">A propos</li>
+                <li class="m-2">Apropos</li>
                 <li class="m-2 p-2 rounded-xl bg-blue-500 text-slate-50">To Do list</li>
             </ul>
+
+            <div class="hidden max-sm:flex max-sm:justify-end max-sm:w-full max-sm:text-4xl" >
+                <i class="icon-navicon" id="btnmenu"></i>
+            </div>
         </div>
     </div>
-    <div class="pt-12">
+
+    <div class="pt-12 max-md:pt-12 max-sm:pt-20">
         <div class="">
-            <h1 class="flex justify-center text-7xl font-bold debut">Organisez enfin votre</h1>
-            <h2 class="flex justify-center text-6xl font-bold debut">vie et votre travail.</h2>
-            <h3 class="flex justify-center text-6xl debut">MauriceTasks</h3>
+            <h1 class="flex justify-center text-7xl font-bold max-md:text-6xl max-md:font-bold debut
+            max-sm:text-4xl">Organisez enfin votre</h1>
+            <h2 class="flex justify-center text-6xl font-bold max-md:text-5xl max-md:font-bold debut
+            max-sm:text-4xl">vie et votre travail.</h2>
+            <h3 class="flex justify-center text-6xl debut max-sm:text-4xl">MauriceTasks</h3>
 
 
             <div class="simple">
-                <h2 class="flex justify-center pt-14 text-slate-400 text-xl font-bold">Simplifiez votre vie et celle de votre équipe. L'application de</h2>
-                <h2 class="flex justify-center text-slate-400 text-xl font-bold ">gestion des tâches et de liste de tâches la plus utilisée au monde.</h2>
+                <h2 class="flex justify-center pt-14 text-slate-400 text-xl font-bold
+                max-sm:text-sm max-sm:text-center max-sm:flex max-sm:justify-center">Simplifiez votre vie et celle de votre équipe. L'application de</h2>
+                <h2 class="flex justify-center text-slate-400 text-xl font-bold 
+                max-sm:text-sm max-sm:flex max-sm:justify-center">liste de tâches la plus utilisée au monde.</h2>
 
             </div> 
             <div class="flex justify-center pt-12 btn">

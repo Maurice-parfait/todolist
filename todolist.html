@@ -5,46 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO-LIST</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="icomoon/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="m-0 p-0 box-border  h-screen bg-slate-50 font-primary">
 
-    <div class="px-14 py-4 text-xl">
+    <div class="px-14 py-4 text-xl max-md:px-4 max-md:py-2 max-sm:px-8">
         <div class="flex items-center ">
             <div class="flex items-center text-blue-500 font-bold">
                 <img class="" src="img/icons8-todoist-50.png" alt="">
                 <h1>MauraTasks</h1>
             </div>
     
-            <ul class="flex justify-end w-full items-center">
-                <li class="m-2"><a href="index.html">
-                    Acceuil
-                </a></li>
-                <li class="m-2">A propos</li>
-                <li class="m-2 p-2 rounded-xl bg-blue-500 text-slate-50">freback</li>
+            <ul class="flex justify-end w-full items-center 
+                max-sm:flex-col max-sm:justify-center max-sm:z-[99] max-sm:border max-sm:h-screen
+                max-sm:text-5xl max-sm:flex-wrap max-sm:bg-red-600 max-sm:absolute max-sm:top-16 max-sm:left-0 
+                max-sm:hidden" id="menu">
+                <li class="m-2">Acceuil</li>
+                <li class="m-2">Apropos</li>
+                <li class="m-2 p-2 rounded-xl bg-blue-500 text-slate-50">To Do list</li>
             </ul>
+
+            <div class="hidden max-sm:flex max-sm:justify-end max-sm:w-full max-sm:text-4xl" >
+                <i class="icon-navicon" id="btnmenu"></i>
+            </div>
         </div>
     </div>
     
-    <div class="flex px-14 items-center">
-        <div class="w-1/3 mr-4">
+    <div class="flex px-14 items-center max-sm:px-2">
+        <div class="w-1/3 mr-4 max-sm:hidden">
             <img class="rounded-xl h-96" src="img/Best-To-Do-List-Apps-For-Better-Task-Management.webp" alt="">
         </div>
 
-        <div class="w-3/5">
+        <div class="w-3/5 max-sm:w-full max-sm:mt-10">
             <h1 class="flex justify-center text-2xl font-bold">MA TO DO LIST: MauriceTasks</h1>
 
-            <div class="flex">
-                <div class="ml-8 mt-14 w-1/2">
-                    <label for="">Ajouter une tache :</label> <br>
-                    <textarea class="p-4 border rounded-xl focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" id="ajout_tache" name="" cols="30" rows="5"></textarea> <br>
+            <div class="flex max-sm:block">
+                <div class="ml-8 mt-14 w-1/2 max-sm:w-full max-sm:mt-4 max-sm:ml-1">
+                    <label for="" class="max-sm:font-bold max-sm:text-xl max-sm:mb-2">Ajouter une tache :</label> <br>
+                    <textarea class="p-4 border rounded-xl focus:outline-none focus:border-sky-500 focus:ring-1
+                     focus:ring-sky-500   max-sm:max-h-16 max-sm:w-5/6 max-sm:p-2 max-sm:border-black" id="ajout_tache" name="" cols="30" rows="5"></textarea> <br>
 
-                    <div class="mt-6">
+                    <div class="mt-6 max-sm:flex max-sm:justify-end max-sm:mr-10">
                         <button id="btnajt" class="p-4 rounded-xl flex justify-center  bg-blue-500 text-slate-50 text-xl animate-bounce">AJOUTER</button>
                     </div>
                 </div>
 
-                <div class="w-1/2 mt-14">
+                <div class="w-1/2 mt-14 max-sm:w-full">
                     
                     <ul id="tache" class="list-decimal">
 
@@ -62,6 +69,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script src="script.js"></script>
+    <script src="todolist.js"></script>
 </body>
 </html>
