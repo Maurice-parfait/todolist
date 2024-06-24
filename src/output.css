@@ -1113,6 +1113,11 @@ video {
     padding-right: 1rem;
   }
 
+  .max-sm\:px-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
   .max-sm\:pt-20{
     padding-top: 5rem;
   }
@@ -1139,6 +1144,11 @@ video {
   .max-sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .max-sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .max-sm\:font-bold{
