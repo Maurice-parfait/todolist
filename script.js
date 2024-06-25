@@ -38,7 +38,7 @@ ScrollReveal().reveal('.btn', {
     easing: 'ease-in-out'
 });
 
-// affichage menu
+// affichage menu responsive
 
 const menu = document.getElementById("menu");
 const btnmenu = document.getElementById("btnmenu");
