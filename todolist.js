@@ -57,3 +57,28 @@ function supprimerlist(task) {
     liste.removeChild(task); 
 }
 
+const menu = document.getElementById("menu");
+const btnmenu = document.getElementById("btnmenu");
+const closemenu = document.getElementById("closemenu");
+const iconeclosemenu = document.getElementById("iconeclosemenu");
+
+btnmenu.addEventListener("click", function(e) {
+    e.preventDefault();
+    menu.style.display = "block";
+    
+    btnmenu.style.display = "none";
+
+    closemenu.style.display = "block";
+    closemenu.classList.add('flex', ' justify-center', 'w-full');
+
+
+});
+
+iconeclosemenu.addEventListener('click', function(e) {
+    menu.style.display = "none";
+
+    closemenu.style.display = "none";
+
+    btnmenu.style.display = "block";
+
+});
