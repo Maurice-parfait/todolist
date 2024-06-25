@@ -34,16 +34,19 @@
                 </div>
         
                 <ul class="flex justify-end w-full items-center 
-                    max-sm:flex-col max-sm:justify-center max-sm:z-[99] max-sm:border max-sm:h-screen
-                    max-sm:text-5xl max-sm:flex-wrap max-sm:bg-red-600 max-sm:absolute max-sm:top-16 max-sm:left-0 
-                    max-sm:hidden" id="menu">
-                    <li class="m-2">Acceuil</li>
+                    max-sm:z-[99] max-sm:text-4xl max-sm:flex-wrap backdrop-opacity-40 max-sm:bg-slate-50 
+                    max-sm:absolute max-sm:top-16 max-sm:left-0 max-sm:h-screen max-sm:hidden max-sm:pt-10"  id="menu">
+                    <li class="m-2"> <a href="index.html">Acceuil</a></li>
                     <li class="m-2">Apropos</li>
                     <li class="m-2 p-2 rounded-xl bg-blue-500 text-slate-50"><a href="todolist.html">To Do list</a></li>
                 </ul>
     
                 <div class="hidden max-sm:flex max-sm:justify-end max-sm:w-full max-sm:text-4xl" >
                     <i class="icon-navicon" id="btnmenu"></i>
+                </div>
+
+                <div class="hidden max-sm:hidden max-sm:text-4xl" id="closemenu">
+                    <i class="icon-close" id="iconeclosemenu"></i>
                 </div>
             </div>
         </div>
@@ -60,20 +63,21 @@
     
                 <div class="simple">
                     <h2 class="flex justify-center pt-14 text-slate-400 text-xl font-bold
-                    max-sm:text-sm max-sm:text-center max-sm:flex max-sm:justify-center">Simplifiez votre vie et celle de votre équipe. L'application de</h2>
+                    max-sm:text-sm max-sm:text-center max-sm:flex max-sm:justify-center max-sm:px-2">Simplifiez votre vie et celle de votre équipe. L'application de </h2>
                     <h2 class="flex justify-center text-slate-400 text-xl font-bold 
-                    max-sm:text-sm max-sm:flex max-sm:justify-center">liste de tâches la plus utilisée au monde.</h2>
-    
+                    max-sm:text-sm max-sm:flex max-sm:justify-center "> liste de tâches la plus utilisée au monde. </h2>
                 </div> 
-                <div class="flex justify-center pt-12 btn">
-    
-                    <a href="todolist.html" class="border p-4 rounded-xl bg-blue-500 text-slate-50 text-xl animate-bounce">
-                        <button>commencer 
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
+
+
+                <div class="flex justify-center mt-10 btn">
+                    <a href="todolist.html" class="border p-4 rounded-xl bg-blue-500 text-slate-50 text-xl ">
+                        <button class="items-center flex">commencer 
+                            <ion-icon class="animate-bounce pt-2" name="arrow-forward-outline"></ion-icon>
                         </button>
                     </a>
     
                 </div>
+
             </div>
     
         </div>
